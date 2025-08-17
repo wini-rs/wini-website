@@ -4,10 +4,7 @@
     inputs = {
         nixpkgs.url = "github:NixOS/nixpkgs/nixpkgs-unstable";
         systems.url = "github:nix-systems/default";
-        rust-overlay = {
-            url = "github:oxalica/rust-overlay";
-            input.nixpkgs.follows = "nixpkgs";
-        };
+        rust-overlay.url = "github:oxalica/rust-overlay";
         flake-utils.url  = "github:numtide/flake-utils";
     };
 
@@ -29,7 +26,8 @@
                     dart-sass
                     fd
                     ripgrep
-                    rust-bin.selectLatestNightlyWith (toolchain: toolchain.default)
+                    (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default))
+                    delta
                 ];
             };
         }
