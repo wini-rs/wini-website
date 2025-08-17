@@ -1,18 +1,18 @@
 [origin]
-last_commit_hash = "447b51dc495237f2b058ecbe9cdb07a4b259e2f5"
-remote_url = "https://codeberg.org/wini/wini-template"
-branch = "main"
-name = "TEMPLATE_NAME_TO_RESOLVE"
+  branch = "main"
+  last_commit_hash = "848f566ef4288ac2b71c3a8f236913fa29c647d5"
+  name = "TEMPLATE_NAME_TO_RESOLVE"
+  remote_url = "https://codeberg.org/wini/wini-template"
 
 # All the paths are relatives to `./src` by default. At the exception of `modules`.
 [path]
-pages = "./pages"
-components = "./components"
-layout = "./layout"
-cron = "./cron"
-public = "../public"
-# Modules is relative to `public`, because it should always be public.
-modules = "./modules"
+  components = "./components"
+  cron = "./cron"
+  layout = "./layout"
+  pages = "./pages"
+  public = "../public"
+  # Modules is relative to `public`, because it should always be public.
+  modules = "./modules"
 
 # The cache rules for the cache categories.
 # > Note that each cache category (html, css, javscripts, public, or more if defined in
@@ -25,14 +25,14 @@ modules = "./modules"
 #
 # More info about cache: https://developer.mozilla.org/en-US/docs/Web/HTTP/Headers/Cache-Control
 [cache.default]
-html = "public, max-age=3600"
-css = "public, max-age=3600"
-javascript = "public, max-age=3600"
-public = "public, max-age=86000, immutable"
-function = true
+  css = "public, max-age=3600"
+  function = true
+  html = "public, max-age=3600"
+  javascript = "public, max-age=3600"
+  public = "public, max-age=86000, immutable"
 [cache.local]
-html = "no-cache"
-css = "no-cache"
-javascript = "no-cache"
-public = "no-cache"
-function = false
+  css = "no-cache"
+  function = false
+  html = "no-cache"
+  javascript = "no-cache"
+  public = "no-cache"
