@@ -24,6 +24,7 @@
                     coreutils
                     bun
                     dart-sass
+                    just
                     fd
                     ripgrep
                     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default))
