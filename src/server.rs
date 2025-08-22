@@ -9,7 +9,7 @@ use {
             handling_file::{self},
         },
     },
-    axum::{Router, middleware, routing::get},
+    axum::{Router, middleware, response::Redirect, routing::get},
     log::info,
     tower_http::compression::CompressionLayer,
 };
@@ -29,6 +29,7 @@ pub async fn start() {
         .layer(middleware::from_fn(cache::html_middleware))
         .route("/htmx/{segment}", get(pages::doc::render))
         .route("/{*wildcard}", get(handling_file::handle_file))
+        .route("/", get(Redirect::permanent("/doc/introduction")))
         .layer(comression_layer);
 
 
