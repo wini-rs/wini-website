@@ -22,7 +22,8 @@ pre {
     overflow: auto;
 }
 
-.note, .warn {
+.markdown-alert-note, .note, .warn {
+    margin: 0px;
     &::before {
         content: "Note";
         color: #72b0c0;
