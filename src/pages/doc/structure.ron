@@ -51,6 +51,7 @@ Directory(
             title: "Integrations",
             pages: [
                 Page(title: "htmx", page: "htmx"),
+                Page(title: "alpinejs", page: "alpinejs"),
                 Page(title: "sqlx", page: "sqlx"),
             ],
         ),
