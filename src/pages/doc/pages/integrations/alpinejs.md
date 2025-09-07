@@ -19,11 +19,11 @@ import "alpinejs";
 ## 3. Goes well with maud:
 
 ```scss
-main x-data="{ open: false }" {
-    div x-bind:class="open && 'visible"{
+main x-data="{ isActive: false }" {
+    div x-bind:class="isActive && 'active'"{
         "Some info"
     }
-    button x-on:click="open = !open" {
+    button x-on:click="isActive = !isActive" {
         "Toggle"
     }
 }
