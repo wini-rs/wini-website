@@ -36,6 +36,10 @@ Directory(
                 Page(title: "wini-maud", page: "wini-maud"),
             ],
         ),
+        Page(
+            page: "features",
+            title: "Features",
+        ),
         Directory(
             is_ordered: true,
             page: None,
