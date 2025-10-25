@@ -5,7 +5,7 @@
 You can easily create a page, a component or a layout by using
 
 ```sh
-wini new page # or component or layout
+wini new page # or `component` or `layout`
 ```
 
 ## Update the original wini-template

@@ -3,9 +3,11 @@
 ## The good
 
 - It's **fast** (we'll see it more in depth later)
-- It has an **elegant syntax**. Even tho this is a subjective point, for the vast majority of expessions, Maud has substantially less characters than HTML and incorporate CSS convetions (`#` <=> id, `.` <=> class) that are easily recognizable.
+- It has an **elegant syntax**. Even though this is a subjective point, for the vast majority of expessions, Maud has substantially less characters than HTML and incorporate CSS convetions (`#` <=> id, `.` <=> class) that are easily recognizable.
 - Support for **Rust statements** (`if`, `match`, `for`, ...)
 - **Auto-completion**
+- **Verified at compile-time**: If you make a typo in the name of an identifier or in the syntax, the code will NOT compile
+- Produces **minified HTML**
 
 ## The bad
 - Doesn't have a **formatter**

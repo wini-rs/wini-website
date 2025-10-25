@@ -2,7 +2,7 @@
 
 When using Wini from the official repository, you have the possibility to customize the template that you want to use with *features*.
 
-Here is therefore the differents features that there are, and how you can use them
+Here is therefore the differents features and how you can use them
 
 ## nushell
 

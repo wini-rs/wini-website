@@ -8,7 +8,7 @@ Here is the basic overview of `src/`
 src
 ├── components/
 ├── cron/
-├── layout/
+├── layouts/
 ├── lib.rs
 ├── main.rs
 ├── pages/
@@ -33,7 +33,7 @@ Think of it as a way to automate repetitive tasks without needing to manually ex
 Therefore, this directory is just a place where you can put your crons if you have some. If you don't need it, you can just remove the directory and remove it from `lib.rs`
 
 
-## layout/
+## layouts/
 
 The definition of layouts used in the project
 
