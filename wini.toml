@@ -8,7 +8,7 @@ remote_url = "https://codeberg.org/wini/wini-template"
 [path]
 components = "./components"
 cron = "./cron"
-layout = "./layout"
+layouts = "./layouts"
 pages = "./pages"
 public = "../public"
 # Modules is relative to `public`, because it should always be public.

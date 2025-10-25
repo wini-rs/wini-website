@@ -1,8 +1,15 @@
 $header-height: 26px;
 $p-header: 16px;
 
+html {
+    background: #181818;
+}
 
-body {
+button {
+    background: #181818;
+}
+
+body > div {
     display: flex;
     flex-direction: row;
     background: #181818;
@@ -36,7 +43,7 @@ header {
         }
     }
 
-    h1 {
+    span#title {
         font-size: 24px;
         margin-block: 0px;
         font-weight: 500;

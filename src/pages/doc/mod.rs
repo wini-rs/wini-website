@@ -59,7 +59,8 @@ impl<'l> PageOrDirectory<'l> {
                         hx-get={"/htmx/" (page)}
                         hx-target="#horizontal-content"
                         hx-replace-url={"/doc/" (page)}
-                        _ = "on click liClick()"
+                        x-on:click={"page = '"(page)"'; liClick()"}
+                        x-bind:class={"'"(page)"' == page && 'active'"}
                     { (title) }
                 }
             },
@@ -72,7 +73,8 @@ impl<'l> PageOrDirectory<'l> {
                             hx-get={"/htmx/" (page)}
                             hx-target="#horizontal-content"
                             hx-replace-url={"/doc/" (page)}
-                            _ = "on click liClick()"
+                            x-on:click={"page = '"(page)"'; liClick()"}
+                            x-bind:class={"'"(page)"' == page && 'active'"}
                         { (title) }
                     } @else {
                         li { (title) }
@@ -226,16 +228,16 @@ pub async fn render(req: Request) -> Markup {
                 hx-get={"/htmx/" (previous_page)}
                 hx-target="#horizontal-content"
                 hx-replace-url={"/doc/" (previous_page)}
+                x-on:click={"page = '" (previous_page)"'"}
             {
                 (PreEscaped(
-                        svg(Type::Solid, "angle-left"
-
-                        ).unwrap()))
+                    svg(Type::Solid, "angle-left").unwrap()
+                ))
             }
         } @else {
             div .placeholder-previous-next {}
         }
-        main _="on load call hlCurrentPage()" {
+        main {
             #content {
                 (PreEscaped(result))
             }
@@ -245,6 +247,7 @@ pub async fn render(req: Request) -> Markup {
                 hx-get={"/htmx/" (next_page)}
                 hx-replace-url={"/doc/" (next_page)}
                 hx-target="#horizontal-content"
+                x-on:click={"page = '" (next_page)"'"}
             {
                 (PreEscaped(
                     svg(

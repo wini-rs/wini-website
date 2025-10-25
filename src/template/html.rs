@@ -24,7 +24,7 @@ pub fn html(
                 link rel="icon" href="/favicon.ico" sizes="any";
                 link rel="icon" href="/favicon.svg" type="image/svg+xml";
                 link rel="stylesheet" href="/main.css";
-                script src="/helpers.min.js" defer {}
+                // script src="/helpers.min.js" defer {}
                 @for script in scripts_files {
                     script src=(script) defer {}
                 }
