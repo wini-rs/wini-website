@@ -1,25 +1,22 @@
 use {
     crate::{
-        layout::main,
+        layouts::main,
         pages,
-        shared::wini::PORT,
+        shared::wini::{layer::MetaLayerBuilder, PORT},
         template,
         utils::wini::{
             cache,
             handling_file::{self},
         },
     },
-    axum::{Router, middleware, response::Redirect, routing::get},
+    axum::{middleware, response::Redirect, routing::get, Router},
     log::info,
+    std::collections::HashMap,
     tower_http::compression::CompressionLayer,
 };
 
 
 pub async fn start() {
-    // Support for compression
-    let comression_layer = CompressionLayer::new();
-
-
     // The main router of the application is defined here
     let app = Router::new()
         .route("/doc/{*wildcard}", get(pages::doc::render))
@@ -30,7 +27,7 @@ pub async fn start() {
         .route("/htmx/{segment}", get(pages::doc::render))
         .route("/{*wildcard}", get(handling_file::handle_file))
         .route("/", get(Redirect::permanent("/doc/introduction")))
-        .layer(comression_layer);
+        .layer(CompressionLayer::new());
 
 
     // Start the server

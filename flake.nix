@@ -19,16 +19,21 @@
         {
             devShells.default = with pkgs; mkShell {
                 buildInputs = [
-                    watchexec
                     yq-go
                     coreutils
                     bun
+                    gnused
+                    git
+                    iproute2
                     dart-sass
                     just
                     fd
                     ripgrep
                     (rust-bin.selectLatestNightlyWith (toolchain: toolchain.default))
                     delta
+                    just
+                    taplo
+                    watchexec
                 ];
             };
         }
