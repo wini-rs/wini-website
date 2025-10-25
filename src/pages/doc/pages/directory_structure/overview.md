@@ -4,16 +4,19 @@ Below is the global directory structure of a new wini project:
 
 ```sh
 .
+├── .editorconfig
 ├── biome.json             
 ├── build.rs
 ├── bun.lockb
 ├── Cargo.toml
+├── clippy.toml
 ├── flake.nix
 ├── justfile
 ├── package.json
 ├── packages-files.toml
 ├── README.md
 ├── rustfmt.toml
+├── taplo.toml
 ├── tsconfig.json
 ├── wini.toml
 ├── macros/
@@ -24,7 +27,7 @@ Below is the global directory structure of a new wini project:
 ├── src/
 │   ├── components/
 │   ├── cron/
-│   ├── layout/
+│   ├── layouts/
 │   ├── lib.rs
 │   ├── main.rs
 │   ├── pages/

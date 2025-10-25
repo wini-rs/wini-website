@@ -1,6 +1,6 @@
 # Components
 
-Components are functions — returning some HTML — that can be used in different pages, layout and components too.
+Components are functions returning some HTML, that can be used in different pages, layout and components too.
 
 ## Usage
 ```rs

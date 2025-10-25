@@ -19,6 +19,9 @@ A binary lockfile of all the javascript packages managed by [`bun`](https://bun.
 
 The cargo configuration file of the current project. More information at <https://doc.rust-lang.org/cargo/reference/manifest.html>.
 
+## .editorconfig
+
+[editorconfig](https://editorconfig.org/) is a tool to define basic formatting rules for cross languages. This is therefore a config file for editorconfig
 
 ## flake.nix
 
@@ -45,9 +48,9 @@ This package is after that put in the infamous directory called `node_modules/`.
 
 Therefore, a legitimate question is:
 
-When you are using a package in one of your script, which files should it includes ? And this is exactly what `packages-files.toml` tries to solve: specifying which files should be included when using a pacakge. This can be javascript files like stylesheets.
+When you are "using" a package in one of your script, which files should it send back in the head ? And this is exactly what `packages-files.toml` tries to solve: specifying which files should be included in the head when "using" a package. This can be javascript files like stylesheets.
 
-Most of the times, you won't have to touch this file because the question of which files to include will be asked to you when using `wini js-add`
+Most of the times, you won't have to touch this file because the question of "which files to include?" will be asked to you when using `wini js-add`
 
 
 ## README.md 
@@ -59,6 +62,9 @@ A brief introduction to "how do X in the project ?"
 
 [Rustfmt](https://github.com/rust-lang/rustfmt) is the default Rust formatter. Therefore, this file is just the configuration of the formatter.
 
+## taplo.toml
+
+[Taplo](https://taplo.tamasfe.dev/) is a toml formatter. Therefore, this file is just the configuration of the formatter.
 
 ## tsconfig.json
 

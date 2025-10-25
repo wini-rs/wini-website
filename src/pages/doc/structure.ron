@@ -46,6 +46,7 @@ Directory(
             title: "Technical dive",
             pages: [
                 Page(title: "Hosting your own template", page: "hosting_your_template"),
+                Page(title: "Error handling and propagation", page: "error_handling_and_propagation"),
                 Page(title: "Procedural macros", page: "procedural_macros"),
             ],
         ),
