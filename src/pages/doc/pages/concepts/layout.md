@@ -18,7 +18,7 @@ async fn my_layout(child: Markup) {
             "Hello"
         }
         main {
-            (html)
+            (child)
         }
     }
 } // Will return `<header>Hello</header><main>Hello world!</main>` when applied to my_page
