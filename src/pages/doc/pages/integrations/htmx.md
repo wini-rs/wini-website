@@ -29,4 +29,4 @@ div hx-post="/mouse_entered" hx-trigger="mouseenter" {
 > [!NOTE]
 > If you have style scoping to page or components, you should probably use the [head-support extension](https://htmx.org/extensions/head-support/).
 
-_A complete example can be found here: [github](https://github.com/wini-rs/wini/tree/main/examples/htmx) / [codeberg](https://codeberg.org/wini/wini/src/branch/main/examples/htmx)_
+_A complete example can be found here: [github](https://github.com/wini-rs/example-todo-app)_
